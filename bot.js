@@ -237,7 +237,6 @@ client.on("message", message => {
 		message.member.voiceChannel.join().then(message.react('✅'));
 	}
 });
-                    });
 
 
 
