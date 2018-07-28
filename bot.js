@@ -18,14 +18,8 @@ var skipReq = 0;
 var skippers = [];
 var now_playing = [];
 
-const prefix = "4";
+const prefix = "!";
 
-client.on('ready', () => {
-    console.log(`Logged in as ${client.user.tag}!`);
-    console.log(`in ${client.guilds.size} servers `)
-    console.log(`[xd] ${client.users.size}`)
-    client.user.setStatus("idle")
-});
 
 
 client.on('ready', () => {});
@@ -229,7 +223,6 @@ function isYoutube(str) {
       message.channel.send({embed});
      }
     });
-   
 
 
 
