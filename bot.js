@@ -121,7 +121,7 @@ function play(guild, song, message) {
 }
 
 client.on("message", message => {
-	 if (message.content === `1play.`) {
+	 if (message.content === `4play.`) {
 		if (!message.member.voiceChannel) return message.reply('**Sorry,youre not on a voice channel**');
 		message.member.voiceChannel.join().then(message.react('✅'));
 	}
